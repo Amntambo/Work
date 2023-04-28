@@ -36,16 +36,10 @@ public class RegisterController {
 	private UserService userService;
 	private EmailService emailService;
 	
-	@Autowired
-	public RegisterController(
-			UserService userService, EmailService emailService) {
-		//this.bCryptPasswordEncoder = bCryptPasswordEncoder;
-		System.out.println("\n \n \n emailService ============================> "+emailService+"\n \n \n");
-
-		this.userService = userService;
-		this.emailService = emailService;
-	}
 	
+	
+	
+
 	// Return registration form template
 	@RequestMapping(value="/register", method = RequestMethod.GET)
 
